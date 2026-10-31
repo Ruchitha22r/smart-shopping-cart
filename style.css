@@ -1,0 +1,211 @@
+
+/* =================================
+   SMART SHOPPING CART - CSS
+================================= */
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #222;
+}
+
+/* Header */
+.header {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 15px;
+    color: #dbeafe;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Welcome Section */
+.welcome {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.welcome h2 {
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    color: #666;
+}
+
+/* Summary Cards */
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.summary-card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.summary-card h3 {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.summary-card p {
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Products Section */
+.products-section,
+.cart-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.products-section h2,
+.cart-section h2 {
+    color: #172554;
+    margin-bottom: 20px;
+}
+
+/* Product List */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.product-card h3 {
+    margin: 12px 0;
+    color: #172554;
+}
+
+.product-card p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.product-image {
+    font-size: 45px;
+}
+
+/* Buttons */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Shopping Cart */
+#cart-items {
+    margin: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#grand-total {
+    color: #15803d;
+    margin-top: 20px;
+}
+
+#checkout-btn {
+    background: #16a34a;
+    padding: 13px 25px;
+    font-size: 15px;
+}
+
+#checkout-btn:hover {
+    background: #15803d;
+}
+
+/* Footer */
+.footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .cart-item {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}

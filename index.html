@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <header class="header">
+        <h1>🛒 Smart Shopping Cart</h1>
+        <p>IoT-Based Smart Shopping System</p>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="container">
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h2>Welcome to Smart Shopping!</h2>
+            <p>Shop smarter, faster and easier.</p>
+        </section>
+
+        <!-- Shopping Information -->
+        <section class="summary">
+
+            <div class="summary-card">
+                <h3>Total Products</h3>
+                <p id="product-count">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Cart Items</h3>
+                <p id="cart-count">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Total Amount</h3>
+                <p id="total-amount">₹0</p>
+            </div>
+
+        </section>
+
+        <!-- Product Section -->
+        <section class="products-section">
+
+            <h2>Available Products</h2>
+
+            <div id="product-list" class="product-list">
+                <!-- Products will appear here -->
+            </div>
+
+        </section>
+
+        <!-- Shopping Cart Section -->
+        <section class="cart-section">
+
+            <h2>My Shopping Cart</h2>
+
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <h3 id="grand-total">Grand Total: ₹0</h3>
+
+            <button id="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Smart Shopping Cart | IoT Virtual Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
